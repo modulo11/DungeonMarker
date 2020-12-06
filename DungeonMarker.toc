@@ -1,0 +1,9 @@
+## Interface: 90002
+## Version: 0.0.1
+## Title: DungeonMarker
+## Notes: Automatically marks targets that need to be interrupted
+## Author: modulo11
+
+embeds.xml
+
+core.lua
