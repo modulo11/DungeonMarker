@@ -98,7 +98,6 @@ local TrackedSpells = {
   [326450] = true, -- Loyal Beasts (buff)
 
   -- High Adjudicator Aleez Boss
-  [323538] = true, -- Bolt of Power (ST damage) (high)
   [323552] = true, -- Volley of Power (AOE damage) (high)
 
   -- Theater of Pain
@@ -130,8 +129,6 @@ local TrackedSpells = {
   [317963] = true, -- Burden of Knowledge (ST damage) (medium)
   [327648] = true, -- Internal Strife (AOE damage) (medium)
   [328331] = true, -- Forced Confession (AOE damage) (medium)
-  -- [317959] = true, -- Dark Lash (ST damage) (low)
-  -- [328137] = true, -- Dark Pulse (ST damage) (low)
 
   -- Sanguine Depths
   [322433] = true, -- Stoneskin (buff) (high)
