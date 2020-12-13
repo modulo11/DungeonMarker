@@ -52,13 +52,6 @@ local AvailableMarkers = {
 }
 
 local TrackedSpells = {
-  -- Torghast
-  -- TODO: Heroic Thrust, Bone Armor, Terrifying Roar, Shackle, Deafening Howl
-
-  [295929] = true, -- Rats!
-  [304075] = true, -- Bind the Fallen
-  [304093] = true, -- Mass Debilitate
-
   -- The Necrotic Wake
   [320462] = true, -- Necrotic Bolt (absorb) (high)
   [324293] = true, -- Rasping Scream (displacement) (high)
