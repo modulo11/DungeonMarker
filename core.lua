@@ -52,9 +52,6 @@ local AvailableMarkers = {
 }
 
 local TrackedSpells = {
-  [8936] = true, -- Regrowth (debugging)
-  -- [212084] = true, -- Fel Devestations (debugging)
-
   -- Torghast
   -- TODO: Heroic Thrust, Bone Armor, Terrifying Roar, Shackle, Deafening Howl
 
