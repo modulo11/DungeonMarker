@@ -162,19 +162,24 @@ function DungeonMarker:GetFreeMarker(castGUID, unitTarget)
   return nil
 end
 
-function DungeonMarker:ApplyMarker(unitTarget, castGUID, spellID)
-  local found = false
+function DungeonMarker:ShouldMarkerBeApplied(unitTarget, castGUID)
+  if GetRaidTargetIndex(unitTarget) ~= nil then return false end
+
   for _, marker in pairs(AvailableMarkers) do
     if marker.guid == castGUID then
-      found = true
+      return false
     end
   end
+  return true
+  end
 
+function DungeonMarker:ApplyMarker(unitTarget, castGUID, spellID)
   -- Events are triggered multiple times for the same cast but different unitTargets
-  if not found then
+  if self:ShouldMarkerBeApplied(unitTarget, castGUID) then
     local markerId = self:GetFreeMarker(castGUID, unitTarget)
     local marker = AvailableMarkers[markerId]
-    local spellName = GetSpellInfo(spellID)
+    local name, _, icon = GetSpellInfo(spellID)
+    local unitName = GetUnitName(unitTarget)
 
     if debug then self:Print("Adding " .. marker.icon .. " to " .. unitName .. " casting |T" .. icon .. ":0|t " .. name) end
     SetRaidTarget(unitTarget, markerId)
