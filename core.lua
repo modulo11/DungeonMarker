@@ -7,49 +7,49 @@ local AvailableMarkers = {
   {
     guid= nil,
     unit = nil,
-    icon = "{star}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_1:0|t",
   },
   -- Orange Circle
   {
     guid= nil,
     unit = nil,
-    icon = "{circle}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_2:0|t",
   },
   -- Purple Diamond
   {
     guid= nil,
     unit = nil,
-    icon = "{diamond}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_3:0|t",
   },
   -- Green Triangle
   {
     guid= nil,
     unit = nil,
-    icon = "{triangle}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_4:0|t",
   },
   -- White Crescent Moon
   {
     guid= nil,
     unit = nil,
-    icon = "{moon}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_5:0|t",
   },
   -- Blue Square
   {
     guid= nil,
     unit = nil,
-    icon = "{square}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_6:0|t",
   },
   -- Red "X" Cross
   {
     guid= nil,
     unit = nil,
-    icon = "{cross}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_7:0|t",
   },
   -- White Skull
   {
     guid= nil,
     unit = nil,
-    icon = "{skull}",
+    icon = "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8:0|t",
   },
 }
 
