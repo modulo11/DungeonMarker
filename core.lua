@@ -1,5 +1,7 @@
 DungeonMarker = LibStub("AceAddon-3.0"):NewAddon("DungeonMarker", "AceConsole-3.0", "AceEvent-3.0")
 
+local debug = false
+
 local AvailableMarkers = {
   -- Yellow 4-point Star
   {
@@ -174,7 +176,7 @@ function DungeonMarker:ApplyMarker(unitTarget, castGUID, spellID)
     local marker = AvailableMarkers[markerId]
     local spellName = GetSpellInfo(spellID)
 
-    self:Print("Adding " .. marker.icon .. " to " .. unitTarget .. " casting " .. spellName)
+    if debug then self:Print("Adding " .. marker.icon .. " to " .. unitName .. " casting |T" .. icon .. ":0|t " .. name) end
     SetRaidTarget(unitTarget, markerId)
   end
 end
